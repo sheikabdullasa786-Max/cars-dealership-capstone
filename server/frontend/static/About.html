@@ -2,36 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Us | Cars Dealership</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>About Us</title>
+
+    <!-- REQUIRED: Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <style>
+        body {
+            padding-top: 40px;
+        }
+        .team-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>About Our Dealership</h1>
+<div class="container">
+    <h1 class="text-center mb-4">About Us</h1>
 
-    <p>
-        We are a leading car dealership committed to providing high-quality vehicles
-        and excellent customer service. Our team ensures a smooth and transparent
-        car buying experience.
+    <p class="text-center">
+        Welcome to <strong>Cars Dealership Full Stack Web Application</strong>.
+        We are a trusted platform that helps users explore car dealerships,
+        read reviews, and share their experiences. Our mission is to provide
+        transparent and reliable dealership information for customers.
     </p>
 
-    <h2>Our Team</h2>
+    <hr>
 
-    <div class="team">
-        <div class="member">
-            <img src="images/person1.jpg" alt="John Doe" width="150">
-            <h3>John Doe</h3>
-            <p>Sales Manager</p>
-            <p>Email: john.doe@carsdealer.com</p>
+    <h2 class="text-center mt-5 mb-4">Our Team</h2>
+
+    <div class="row text-center">
+
+        <!-- Team Member 1 -->
+        <div class="col-md-6">
+            <img src="/static/images/person1.jpg" alt="John Doe" class="team-img">
+            <h4>John Doe</h4>
+            <p><strong>Sales Manager</strong></p>
+            <p>John oversees dealership partnerships and ensures excellent customer relationships.</p>
+            <p>Email: john.doe@carsdealership.com</p>
         </div>
 
-        <div class="member">
-            <img src="images/person2.jpg" alt="Jane Smith" width="150">
-            <h3>Jane Smith</h3>
-            <p>Customer Relations</p>
-            <p>Email: jane.smith@carsdealer.com</p>
+        <!-- Team Member 2 -->
+        <div class="col-md-6">
+            <img src="/static/images/person2.jpg" alt="Jane Smith" class="team-img">
+            <h4>Jane Smith</h4>
+            <p><strong>Technical Lead</strong></p>
+            <p>Jane manages application development and ensures platform reliability.</p>
+            <p>Email: jane.smith@carsdealership.com</p>
         </div>
+
     </div>
+</div>
 
 </body>
 </html>
